@@ -22,7 +22,8 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty."
   } else {
     for (let i=1; i < katzDeliLine.length; i++) {
-      lineOrder += `${i}. ${katzDeliLine[i-1]}` : lineOrder += `${i}. ${katzDeliLine[i-1]}`;
+      var nextUp = (i > 1) ? `, ${i}. ${katzDeliLine[i-1]}` : `${i}. ${katzDeliLine[i-1]}`;
+      lineOrder += nextUp;
     }
     return `The line is currently: ${lineOrder}`
   }
