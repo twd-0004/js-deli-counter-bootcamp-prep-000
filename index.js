@@ -6,4 +6,5 @@ function takeANumber(katzDeliLine, name) {
       break;
     }
   }
+  return i
 }
